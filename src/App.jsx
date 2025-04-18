@@ -233,7 +233,7 @@ function App() {
         </div>
       ),
       isOpen: false,
-      position: getResponsivePosition(0.1, 0), // 25% from left
+      position: getResponsivePosition(0.2, 0.05), // 25% from left
       zIndex: 1,
       isMinimized: false,
     },
@@ -279,7 +279,7 @@ function App() {
         </div>
       ),
       isOpen: false,
-      position: getResponsivePosition(0.1, 0), // 50% from left
+      position: getResponsivePosition(0.4, 0.05), // 50% from left
       zIndex: 1,
       isMinimized: false,
     },
@@ -389,7 +389,7 @@ function App() {
       )}
 
       {/* Dock */}
-      <div className="fixed w-80 md:w-auto bottom-4 left-1/2 transform -translate-x-1/2 bg-white/20 backdrop-blur-lg px-2 py-1 rounded-xl shadow-md">
+      <div className="fixed w-80 md:w-auto bottom-4 left-1/2 transform -translate-x-1/2 bg-white/20 backdrop-blur-lg px-2 py-1 rounded-xl shadow-md z-50">
         <div className="flex space-x-2">
           <img
             src="/finder-removebg-preview.png"
